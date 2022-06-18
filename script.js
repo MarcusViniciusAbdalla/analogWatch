@@ -9,7 +9,7 @@ function updateClock() {
     let minute = now.getMinutes();
     let second = now.getSeconds();
 
-    digitalElement.innerHTML = `${hour}:${minute}:${second}`;
+    digitalElement.innerHTML = `${fixZero(hour)}:${fixZero(minute)}:${fixZero(second)}`;
 
 }
 
